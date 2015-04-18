@@ -402,21 +402,23 @@ hr.error {
     min-height: 100%;
     width: 100%;
     text-align: center;
-    background: #1a3a64;
     padding-top: 100px;
 }
 
 .error-page h1 {
     font-size: 100px;
+    color: #fff;
 }
 
 .error-page h2 {
     font-size: 50px;
     text-transform: none;
+    color: #fff;
 }
 
 .error-page p {
     font-size: 21px;
+    color: #fff;
 }
 
 .error-page .footer {
@@ -429,24 +431,7 @@ hr.error {
 
 .error-page .btn,
 .error-page .btn:hover {
-    font-family: 'Alegreya Sans', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
     border-color: #fff;
-}
-
-.error-page .btn-outline {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 18px 24px;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.error-page .btn-outline:hover,
-.error-page .btn-outline:active {
-    color: #1a3a64;
-    background-color: #fff;
 }
 
 
