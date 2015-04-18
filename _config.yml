@@ -13,4 +13,4 @@ blog_url: "http://blog.tano.si"
 
 # Build settings
 markdown: kramdown
-exclude: []
+exclude: [README.md]
