@@ -8,7 +8,6 @@ description: >
 baseurl: ""
 url: "http://vlc-qt.tano.si"
 main_url: "http://tano.si"
-projects_url: "http://projects.tano.si"
 blog_url: "http://blog.tano.si"
 
 # Build settings
