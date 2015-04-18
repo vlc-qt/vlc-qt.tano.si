@@ -1,0 +1,154 @@
+---
+layout: default
+title: Quickly create a fully functional cross-platform media player
+smooth: true
+---
+
+        <a id="top" class="anchor"></a>
+
+        <div class="jumbo">
+            <h1>Quickly create a fully functional cross-platform media player</h1>
+
+            <ul class="links">
+                <li>
+                    Version {{ site.data.dl.stable.version }}
+                </li>
+                <li>
+                    <a href="http://github.com/ntadej/vlc-qt" target="_blank">GitHub project</a>
+                </li>
+                <li>
+                    <a data-toggle="modal" href="#tano-modal-lgpl">License</a>
+                </li>
+                <li>
+                    <a data-toggle="modal" href="#tano-modal-donate">Donate</a>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="soften">
+      
+        <a id="about" class="anchor"></a>
+        <h1>About</h1>
+        <p class="byline">VLC-Qt is a free library used to connect Qt and libvlc libraries. It contains core classes for main media playback and some GUI classes for faster media player developement.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Core Library</h2>
+                <p>Connect to libvlc and control playback. Core enables you to completely control libvlc and all its features.
+                    It gives you full control over playback. Widgets and QML classes just simplify communication with core but do not introduce any new features.</p>
+                <p>Entire libvlc library is completely wrapped into C++/Qt. It still enables multiple instances and/or players at the same time.
+                    You can also access libvlc objects for all wrapped functions.</p>
+                <h3>Some of the main features</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">libvlc instance and player</li>
+                    <li class="list-group-item">single file and playlist playback</li>
+                    <li class="list-group-item">audio and video control</li>
+                    <li class="list-group-item">metadata management</li>
+                </ul>
+            </div><!-- /.col-md-6 -->
+            <div class="col-md-6">
+                <h2>Widgets Library</h2>
+                <p>Media players usually need a UI. Widgets part contains several simple, pre-made widgets you can use as superclass:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">video widget</li>
+                    <li class="list-group-item">seek widget</li>
+                    <li class="list-group-item">volume slider</li>
+                    <li class="list-group-item">audio and video controllers</li>
+                </ul>
+            </div><!-- /.col-md-6 -->
+            <div class="col-md-6">
+                <h2>QML Library</h2>
+                <p>VLC-Qt also contains experimental QML part which is not enabled by default. This currently enables simple video playback using OpenGL.</p>
+                <p>I will not work on this feature much so any help is appreciated.</p>
+            </div><!-- /.col-md-6 -->
+        </div><!-- .row -->
+                
+        <hr class="soften">
+
+        <a id="download" class="anchor"></a>
+        <h1>Download</h1>
+        <p class="byline">Download VLC-Qt packages and SDKs for your platform.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>OS X and Windows</h2>
+                {% if site.data.dl.stable.osx %}
+                <p><a href="{{ site.data.dl.stable.osx }}">VLC-Qt for OS X 10.6 and later (64-bit)</a></p>
+                {% else %}
+                <p>OS X binaries are not available yet.<br>Sorry for inconveniece.</p>
+                {% endif %}
+                <p><a href="{{ site.data.dl.stable.win64 }}">VLC-Qt for Windows 64-bit (MSVC 2012)</a><br><a href="{{ site.data.dl.stable.win32 }}">VLC-Qt for Windows 32-bit (MSVC 2012)</a></p>
+                <p>All SDKs are based on Qt 5.1.1 and VLC 2.0.8.</p>
+                <p>Download other OS X and Windows binaries from <a href="http://github.com/ntadej/vlc-qt/releases" target="_blank">GitHub Repository</a>.</p>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Linux packages</h2>
+                <p>Official VLC-Qt packages are available for
+                    <a data-toggle="modal" href="#tano-modal-ubuntu">Ubuntu</a>
+                    and
+                    <a href="https://aur.archlinux.org/packages.php?ID=41827" target="_blank">Arch Linux</a>.</p>
+                <p>There may be other community packages available in other distributions.</p>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Source</h2>
+                <p>Download the latest source code using:</p>
+                <pre>git clone git://github.com/ntadej/vlc-qt.git</pre>
+                <p>or visit <a href="http://github.com/ntadej/vlc-qt" target="_blank">GitHub Repository</a>.</p>
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+
+        <hr class="soften">
+      
+        <a id="support" class="anchor"></a>
+        <h1>Help &amp; Support</h1>
+        <p class="byline">Trouble building VLC-Qt based applications? Examples and documentation are provided.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Examples</h2>
+                <p>There are <strong>CMake</strong> and <strong>qmake</strong> based examples available for testing. CMake is recommened as you can detect VLC installation automatically.</p>
+                <p>You can find examples in <strong>examples</strong> directory in the source/binary package or by <a href="http://github.com/ntadej/vlc-qt/tree/master/examples/demo-player" target="_blank">browsing online repository</a>.</p>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Documentation</h2>
+                <p>Full library reference is generated for all supported versions and current development branch automatically.</p>
+                <p><a href="{{ "/reference/" | prepend: site.baseurl }}"><strong>Library reference</strong></a></p>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Supported OS</h2>
+                <p>VLC-Qt supports <strong>Linux</strong>, <strong>OS X</strong> and <strong>Windows</strong>, other operating systems are not supported. Official packages are available for Ubuntu and Arch Linux.</p>
+            </div><!-- /.col-md-4 -->
+        </div><!-- .row -->
+        
+        <hr class="soften">
+    
+        <a id="contribute" class="anchor"></a>
+        <h1>Contribute</h1>
+        <p class="byline">VLC-Qt being open-source project, any help is welcome</p>
+        
+        <div class="row">
+            <div class="col-md-12 tano-center">
+                <p>VLC-Qt is <strong>free (libre) software</strong>. This means that the library source code is available to public, anyone is welcome to research how the library works, participate in its development, freely distribute the library and spread the word!</p>
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->  
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Report issues</h2>
+                <p>There is always an issue that hides from me. You can help me by reporting it on our <a href="https://github.com/ntadej/vlc-qt/issues" target="_blank">Bug tracker</a>.</p>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Code and design</h2>
+                <p>New features and fixes are always welcome. QML support is still considered experimental and an extra hand will speed things up.</p>
+                <p>You can find more information on the <a href="https://github.com/ntadej/vlc-qt" target="_blank">GitHub Repository</a>.</p>
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-4">
+                <h2>Donate</h2>
+                <p>You can always support me by donating for our servers and test hardware.</p>
+                <p><a data-toggle="modal" href="#tano-modal-donate"><strong>Donate</strong></a></p>
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row --> 
+
+{% include modals/projects/donate.html %}
+{% include modals/projects/ubuntu.html %}
+{% include modals/license/lgpl.html %}

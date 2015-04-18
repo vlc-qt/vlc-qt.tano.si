@@ -1,0 +1,4 @@
+version: 0.10.0
+osx:
+win64: https://github.com/ntadej/vlc-qt/releases/download/0.10.0/libvlc-qt_0.10.0_win64_msvc2013.7z
+win32: https://github.com/ntadej/vlc-qt/releases/download/0.10.0/libvlc-qt_0.10.0_win32_msvc2013.7z
