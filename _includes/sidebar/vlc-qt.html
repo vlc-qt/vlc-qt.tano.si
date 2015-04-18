@@ -1,5 +1,5 @@
 {% include sidebar/start.html %}
-	        	<a class="sidebar-image logo vlc-qt" href="#top"></a>
+	        	<a class="sidebar-image logo vlc-qt" href="{% if page.docs %}{{ site.url }}{% else %}#top{% endif %}"></a>
 
 	        	<h1>VLC-Qt Library</h1>
 
@@ -9,7 +9,7 @@
 	                    <li><a href="#download">Download</a></li>
 	                    <li><a href="#support">Help &amp; Support</a></li>
 	                    <li><a href="#contribute">Contribute</a></li>
-	                    <li><a href="{{ "/reference/" | prepend: site.baseurl }}">Library reference</a></li>
+	                    <li{% if page.docs %} class="active"{% endif %}><a href="{{ "/reference/" | prepend: site.baseurl }}">Library reference</a></li>
 	                </ul>
 	                <ul class="nav nav-stacked nav-extra">
 	                	<li><a href="{{ site.projects_url }}">All projects</a></li>

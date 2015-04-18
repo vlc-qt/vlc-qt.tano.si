@@ -1,0 +1,42 @@
+---
+layout: default
+title: Library Reference
+permalink: /reference/
+docs: true
+---
+        <a id="top" class="anchor"></a>
+        <h1>VLC-Qt</h1>
+        <p class="byline">Library reference documentation</p>
+
+        <div class="row">
+            {% if site.data.docs.supported %}
+            <div class="col-md-3 tano-nocenter">
+                {% for rel in site.data.docs.supported %}
+                <h2>Version {{ rel.version }}</h2>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/">Main documentation</a></p>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/namespaces.html">Namespaces</a></p>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/annotated.html">Classes</a></p>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/files.html">Files</a></p>
+                {% endfor %}
+            </div><!-- /.col-md-3 -->
+            {% endif %}
+            {% if site.data.docs.dev %}
+            <div class="col-md-3 tano-nocenter">
+                {% for rel in site.data.docs.dev %}
+                <h2>Current git</h2>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/">Main documentation</a></p>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/namespaces.html">Namespaces</a></p>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/annotated.html">Classes</a></p>
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/files.html">Files</a></p>
+                {% endfor %}
+            </div><!-- /.col-md-3 -->
+            {% endif %}
+            {% if site.data.docs.archive %}
+            <div class="col-md-3 tano-nocenter">
+                <h2>Archive</h2>
+                {% for rel in site.data.docs.archive %}
+                <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/">{{ rel.version }}</a></p>
+                {% endfor %}
+            </div><!-- /.col-md-3 -->
+            {% endif %}
+        </div><!-- /.row -->

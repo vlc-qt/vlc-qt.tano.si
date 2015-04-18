@@ -1,0 +1,10 @@
+supported:
+  - version: '0.10'
+
+dev:
+  - version: git
+
+archive:
+  - version: '0.9'
+  - version: '0.8'
+  - version: '0.7'
