@@ -5,10 +5,10 @@
 
 	        	<nav class="nav-sidebar">
 			        <ul class="nav nav-stacked">
-	                    <li><a href="#about">About</a></li>
-	                    <li><a href="#download">Download</a></li>
-	                    <li><a href="#support">Help &amp; Support</a></li>
-	                    <li><a href="#contribute">Contribute</a></li>
+	                    <li><a href="{{ "/#about" | prepend: site.baseurl }}">About</a></li>
+	                    <li><a href="{{ "/#download" | prepend: site.baseurl }}">Download</a></li>
+	                    <li><a href="{{ "/#support" | prepend: site.baseurl }}">Help &amp; Support</a></li>
+	                    <li><a href="{{ "/#contribute" | prepend: site.baseurl }}">Contribute</a></li>
 	                    <li{% if page.docs %} class="active"{% endif %}><a href="{{ "/reference/" | prepend: site.baseurl }}">Library reference</a></li>
 	                </ul>
 	                <ul class="nav nav-stacked nav-extra">
