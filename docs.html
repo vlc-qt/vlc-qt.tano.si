@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Library Reference
 permalink: /reference/
 docs: true
@@ -10,7 +10,7 @@ docs: true
 
         <div class="row">
             {% if site.data.docs.supported %}
-            <div class="col-md-3 tano-nocenter">
+            <div class="three columns">
                 {% for rel in site.data.docs.supported %}
                 <h2>Version {{ rel.version }}</h2>
                 <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/">Main documentation</a></p>
@@ -18,10 +18,10 @@ docs: true
                 <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/annotated.html">Classes</a></p>
                 <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/files.html">Files</a></p>
                 {% endfor %}
-            </div><!-- /.col-md-3 -->
+            </div>
             {% endif %}
             {% if site.data.docs.dev %}
-            <div class="col-md-3 tano-nocenter">
+            <div class="three columns">
                 {% for rel in site.data.docs.dev %}
                 <h2>Current git</h2>
                 <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/">Main documentation</a></p>
@@ -29,14 +29,14 @@ docs: true
                 <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/annotated.html">Classes</a></p>
                 <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/files.html">Files</a></p>
                 {% endfor %}
-            </div><!-- /.col-md-3 -->
+            </div>
             {% endif %}
             {% if site.data.docs.archive %}
-            <div class="col-md-3 tano-nocenter">
+            <div class="three columns">
                 <h2>Archive</h2>
                 {% for rel in site.data.docs.archive %}
                 <p><a href="{{ site.baseurl }}/reference/{{ rel.version }}/">{{ rel.version }}</a></p>
                 {% endfor %}
-            </div><!-- /.col-md-3 -->
+            </div>
             {% endif %}
-        </div><!-- /.row -->
+        </div>

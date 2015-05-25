@@ -1,0 +1,48 @@
+.jumbo {
+    color: $hover-color;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+.jumbo ul {
+    font-size: 2.2rem;
+}
+
+.jumbo h1 {
+    text-transform: none;
+}
+
+.jumbo img {
+    display: block;
+    float: none;
+    margin: 0 auto 20px;
+    max-width: 80%;
+}
+
+.jumbo p a,
+.jumbo .links a {
+    font-weight: 500;
+}
+
+/* Textual links */
+.jumbo .links {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.jumbo .links li {
+    display: inline;
+}
+
+.jumbo .links li + li {
+    margin-left: 20px;
+}
+
+@media (#{$bp-larger-than-desktop}) {
+    .jumbo img {
+        max-width: 700px;
+    }
+}

@@ -1,0 +1,251 @@
+// Navbar
+.navbar + .docs-section {
+    border-top-width: 0;
+}
+
+.navbar,
+.navbar-spacer {
+    display: block;
+    width: 100%;
+    height: $navbar-height;
+    background: #fff;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-spacer {
+    display: none;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-left: 0;
+    }
+
+    &:first-child .navbar-link {
+        margin-left: 0;
+    }
+}
+
+.navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+}
+
+.navbar-list-right .navbar-item {
+    float: right;
+}
+
+.navbar-link {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin: 0 1.8rem;
+    text-decoration: none;
+    line-height: $navbar-height;
+    color: $font-color;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.navbar-link.active {
+    color: #33C3F0;
+}
+
+.navbar-dark {
+    background: $hover-color;
+    border-top: 0;
+    border-bottom: 0;
+
+    .navbar-link {
+        color: #fff;
+
+        &:hover {
+            text-decoration: none;
+            color: $highlight-color;
+        }
+    }
+
+    .navbar-link.active {
+        color: #33C3F0;
+    }
+}
+
+.has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+// Popover
+.popover.open {
+    display: block;
+}
+
+.popover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    top: 92%;
+    left: -50%;
+}
+
+.popover-item:first-child .popover-link:after, 
+.popover-item:first-child .popover-link:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.popover-item:first-child .popover-link:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.popover-item:first-child .popover-link:before {
+    border-color: rgba(238, 238, 238, 0);
+    border-bottom-color: #eee;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+.popover-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.popover-item {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.popover-link {
+    position: relative;
+    color: $font-color;
+    display: block;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .1rem;
+
+    &:hover {
+        color: #fff;
+        background: $hover-color;
+        text-decoration: none;
+    }
+}
+
+.popover-item:first-child .popover-link {
+    border-radius: 4px 4px 0 0;
+}
+
+.popover-item:last-child .popover-link {
+    border-radius: 0 0 4px 4px;
+    border-bottom-width: 0;
+}
+
+.popover-link:hover,
+.popover-item:first-child .popover-link:hover:after {
+    border-bottom-color: $hover-color;
+}
+
+// Special
+#cookie_message {
+    display: none;
+    position: fixed;
+    bottom: $navbar-height;
+    left: 0;
+
+    width: 100%;
+    height: 1.5 * $navbar-height;
+    line-height: 0.8 * $navbar-height;
+    background: #fff;
+    z-index: 200;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    .info {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .buttons {
+        line-height: $button-height;
+
+        .button {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (#{$bp-smaller-than-phablet})
+{
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #cookie_message {
+        text-align: center;
+
+        .buttons {
+            text-align: center;
+        }
+    }
+}
+
+@media (#{$bp-larger-than-phablet})
+{
+    body.landing {
+        margin-top: 0;
+    }
+
+    .landing.has-docked-nav .navbar-spacer {
+        display: block;
+    }
+
+    #cookie_message {
+        height: $navbar-height;
+        line-height: $navbar-height;
+
+        .info {
+            width: 44%;
+        }
+
+        .buttons {
+            width: 52%;
+
+            .button {
+                margin: ($navbar-height - $button-height) / 2 0;
+            }
+        }
+    }
+}

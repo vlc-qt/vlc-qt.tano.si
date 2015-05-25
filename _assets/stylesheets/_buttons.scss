@@ -1,0 +1,86 @@
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @include transition-button();
+}
+
+// Buttons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $font-family-headings;
+    text-transform: uppercase;
+    padding: 0 2rem;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    @include transition-button();
+}
+
+input {
+    &[type="submit"],
+    &[type="reset"],
+    &[type="button"] {
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: $font-family-headings;
+        text-transform: uppercase;
+        padding: 0 2rem;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        @include transition-button();
+    }
+}
+
+.button.button-primary,
+button.button-primary {
+    background-color: $hover-color;
+    border-color: $hover-color;
+
+    &:hover,
+    &:focus {
+        color: $hover-color;
+        background-color: #fff;
+        border-color: $hover-color;
+    }
+}
+
+input {
+    &[type="submit"].button-primary,
+    &[type="reset"].button-primary,
+    &[type="button"].button-primary {
+        background-color: $hover-color;
+        border-color: $hover-color;
+
+        &:hover,
+        &:focus {
+            color: $hover-color;
+            background-color: #fff;
+            border-color: $hover-color;
+        }
+    }
+}
+
+.button.button-large,
+button.button-large {
+    height: $button-large-height;
+    padding: 0 $button-large-padding;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: $button-large-height;
+}

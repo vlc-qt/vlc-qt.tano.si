@@ -1,27 +1,31 @@
-    <!-- Modal -->
     <div class="modal fade" id="tano-modal-ubuntu" tabindex="-1" role="dialog" aria-labelledby="Ubuntu Repository" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title">Ubuntu Repository</h4>
                 </div>
                 <div class="modal-body">
                     <h2>Repository</h2>
                     <p>An Ubuntu PPA repository is provided for VLC-Qt for all supported Ubuntu releases.</p>
 
-                    <pre>$ add-apt-repository ppa:ntadej/tano</pre>
+                    {% highlight bash %}
+                    $ add-apt-repository ppa:ntadej/tano
+                    {% endhighlight %}
 
                     <div class="alert alert-warning">
                         <strong>Warning:</strong> This PPA may contain some backports or patches of various applications and libraries that are required for VLC-Qt and/or other projects in this repository.
                     </div>
 
                     <h3>Clean archive repository</h3>
-                    <pre>$ add-apt-repository ppa:ntadej/tano-clean</pre>
+                    {% highlight bash %}
+                    $ add-apt-repository ppa:ntadej/tano-clean
+                    {% endhighlight %}
 
                     <h2>Installation</h2>
                     <p>Install VLC-Qt using your package manager or using command line:</p>
-                    <pre>$ apt-get install libvlc-qt-core1 libvlc-qt-widgets1 libvlc-qt-dbg libvlc-qt-dev</pre>
+                    {% highlight bash %}
+                    $ apt-get install libvlc-qt-core1 libvlc-qt-widgets1 libvlc-qt-dbg libvlc-qt-dev
+                    {% endhighlight %}
 
                     <div class="alert alert-warning">
                         <strong>Warning:</strong> You might need administrative privileges for configuration and installation.
@@ -31,11 +35,13 @@
                     <p>This repository is signed with <a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0x7127A9ECCAE3461771A785EBF7D1458755D8172B&amp;op=index" target="_blank">1024R/55D8172B</a> OpenPGP key.
                         <a href="https://help.launchpad.net/Packaging/PPA#Adding%20a%20PPA%20to%20your%20Ubuntu%20repositories" target="_blank">Follow these instructions</a>
                         if you experience problems installing packages from this PPA or use this command to add OpenPGP key:</p>
-                    <pre>$ apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 55D8172B</pre>
+                    {% highlight bash %}
+                    $ apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 55D8172B
+                    {% endhighlight %}
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </div>
+    </div>

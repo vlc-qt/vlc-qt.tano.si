@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
-        <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% include error/includes.html %}
+        <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+        {% if page.absolute %}
+        <link rel="stylesheet" href="{{ site.url }}{% asset_path external.css %}">
+        <link rel="stylesheet" href="{{ site.url }}{% asset_path main.css %}">
+        {% else %}
+        {% stylesheet external %}
+        {% stylesheet main %}
+        {% endif %}
     </head>
 
-    <body class="error-body">
-        <div class="error-page">
-            <div class="container">
-                <h1>{{ page.title }}</h1>
-                <h2>Oops, you've encountered an error</h2>
-                
-                {{ content }}
-                
-                <p>
-                    <a href="{{ site.url }}" class="btn btn-outline btn-large">Home</a>
-                </p>
+    <body class="error">
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+            <h2>Oops, you've encountered an error</h2>
             
-                <hr class="soften soften-light">
+            {{ content }}
+            
+            <p>
+                <a href="{{ site.url }}" class="button button-primary button-large button-bg">Home</a>
+            </p>
 
-                <footer class="footer">
-                    <p>
-                        &copy; 2004-2015 Tadej Novak
-                    </p>
-                </footer>
-            </div><!-- /.container -->
+            <hr class="soften soften-light">
+
+            <footer class="footer">
+                <p>
+                    &copy; 2004-2015 Tadej Novak
+                </p>
+            </footer>
         </div>
     </body>
 </html>

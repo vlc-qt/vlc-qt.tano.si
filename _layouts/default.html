@@ -1,19 +1,13 @@
-{% include common/header.html %}
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+    <body class="has-docked-nav" data-spy="scroll" data-target=".nav-sidebar">
+{% include cookies.html %}
 
-{% include common/mobile_nav.html %}
-
-<div class="container content vlc-qt">
-    <div class="row row-offcanvas row-offcanvas-right">
-
-	    <!-- main area -->
-	    <div class="col-xs-12 col-sm-9">
+{% include navbar.html %}
 
 {{ content }}
 
-    	</div><!-- /.col-xs-12 main -->
-{% include sidebar/vlc-qt.html %}
-	    
-	</div><!--/.row-->
-</div><!-- /.container -->
-
-{% include common/footer.html %}
+{% include footer.html %}
+    </body>
+</html>

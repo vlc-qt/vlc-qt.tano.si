@@ -1,0 +1,46 @@
+// Error pages
+.error {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background: $hover-color;
+
+    .container {
+        min-height: 100%;
+        text-align: center;
+        padding-top: 10rem;
+
+        h1 {
+            font-size: 10rem;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 700;
+            text-transform: none;
+            color: #fff;
+        }
+
+        p {
+            font-size: 2.4rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: -3rem;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        .button.button-primary,
+        button.button-primary {
+            border-color: #fff;
+            margin: 20px 0;
+        }
+    }
+}

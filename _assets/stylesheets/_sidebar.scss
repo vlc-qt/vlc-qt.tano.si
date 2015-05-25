@@ -1,0 +1,260 @@
+/* Sidebar */
+.sidebar-offcanvas {
+    position: fixed;
+    top: 0; bottom:0; right: 0;
+    width: 200px;
+    padding: 20px;
+
+    background: $hover-color;
+}
+
+.sidebar-offcanvas .logo {
+    display: block;
+    margin: 0 auto;
+
+    width: 128px;
+    height: 128px;
+}
+
+.sidebar-offcanvas .icons {
+    text-align: center;
+
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        color: $highlight-color;
+        text-decoration: none;
+    }
+}
+
+.sidebar-offcanvas .avatar {
+    display: block;
+    margin: 0 auto;
+
+    width: 150px;
+    height: 150px;
+    background: url(http://www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=150) no-repeat center;
+    background-size: 150px 150px;
+}
+
+.sidebar-offcanvas h1 {
+    color: $highlight-color;
+}
+
+.nav-sidebar {
+    margin: 20px;
+}
+
+.nav-sidebar .nav {
+    list-style: none;
+}
+
+.nav-sidebar .nav > li {
+    margin-bottom: 0;
+}
+
+/* all links */
+.nav-sidebar .nav > li > a {
+    display: block;
+    color: #fff;
+    border-left: 2px solid $hover-color;
+    padding: 4px 15px;
+    font-size: 2rem;
+    font-family: $font-family-headings;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @include transition-button();
+}
+
+/* nested links */
+.nav-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+/* active & hover links */
+.nav-sidebar .nav > .active > a, 
+.nav-sidebar .nav > li > a:hover, 
+.nav-sidebar .nav > li > a:focus {     
+    color: $highlight-color;
+    border-left-color: $highlight-color;       
+    text-decoration: none;          
+    background-color: transparent;
+}
+
+.nav-sidebar .nav > .active > a, 
+.nav-sidebar .nav > li > a:hover, 
+.nav-sidebar .nav > li > a:focus {
+
+}
+/* all active links */
+.nav-sidebar .nav > .active > a, 
+.nav-sidebar .nav > .active:hover > a,
+.nav-sidebar .nav > .active:focus > a {
+    font-weight: 700;
+}
+/* nested active links */
+.nav-sidebar .nav .nav >.active > a, 
+.nav-sidebar .nav .nav >.active:hover > a,
+.nav-sidebar .nav .nav >.active:focus > a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.nav-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.nav-sidebar .nav > .active > ul.nav {
+    display: block;           
+}
+
+.nav-sidebar .nav-extra {
+    margin-top: 20px;
+}
+
+.sidebar-offcanvas .footer {
+    font-size: 1.4rem;
+    color: $light-grey;
+    position: absolute;
+    bottom: 15px;
+    left: 0; right: 0;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* RESPONSIVE */
+@media (#{$bp-larger-than-tablet}) {
+    .offcanvas-right {
+        padding-right: 240px;
+    }
+
+    .sidebar-offcanvas .icons {
+        font-size: 2.8rem;
+    }
+}
+
+@media (#{$bp-larger-than-desktop}) {
+    .sidebar-offcanvas {
+        width: 280px;
+    }
+
+    .offcanvas-right {
+        padding-right: 320px;
+    }
+
+
+    .sidebar-offcanvas .icons {
+        font-size: 3.2rem;
+    }
+
+    .sidebar-offcanvas .avatar {
+        width: 200px;
+        height: 200px;
+        background: url(http://www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=200) no-repeat center;
+        background-size: 200px 200px;
+    }
+}
+
+/* collapsed sidebar styles */
+@media (#{$bp-smaller-than-tablet}) {
+    .offcanvas {
+        position: relative;
+    }
+
+    .offcanvas-right {
+        right: 0;
+        @include transition(right 0.3s);
+    }
+
+    .offcanvas-right + .sidebar-offcanvas {
+        right: -240px;
+
+        &.anim {
+            @include transition(right 0.3s);
+        }
+    }
+
+    .offcanvas-left {
+        left: 0;
+        @include transition(left 0.3s);
+    }
+
+    .offcanvas-left + .sidebar-offcanvas {
+        left: -240px;
+
+        &.anim {
+            @include transition(left 0.3s);
+        }
+    }
+
+    .offcanvas-right.active {
+        right: 240px;
+    }
+
+    .offcanvas-right.active + .sidebar-offcanvas {
+        right: 0;
+    }
+
+    .offcanvas-left.active {
+        left: 240px;
+    }
+
+    .offcanvas-left.active + .sidebar-offcanvas {
+        left: 0;
+    }
+
+    .sidebar-offcanvas {
+        position: fixed;
+        top: 0;
+        padding-top: $navbar-height + 2rem;
+        overflow: scroll;
+    }
+
+    .sidebar-offcanvas h1 {
+        display: none;
+    }
+
+    .sidebar-offcanvas .icons {
+        margin-top: 10px;
+        font-size: 2.4rem;
+    }
+
+    .nav-sidebar {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-sidebar .nav > li > a {
+        font-size: 1.8rem;
+    }
+
+    .nav-sidebar .nav .nav > li > a {
+        font-size: 1.6rem;
+    }
+
+    .nav-sidebar .nav-extra {
+        margin-top: 10px;
+    }
+
+    .sidebar-offcanvas .footer {
+        display: none;
+    }
+}
+
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 1.5dppx),
+    only screen and (min-resolution: 144dpi)
+{
+    .sidebar-offcanvas .avatar {
+        background-image: url(http://www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=400);
+    }
+}

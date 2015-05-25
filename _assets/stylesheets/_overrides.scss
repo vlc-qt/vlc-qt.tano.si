@@ -1,0 +1,174 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    padding: 20px 0; 
+}
+
+p {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Anchor */
+a.anchor {
+    position: relative;
+    top: -50px;
+    display: block;
+}
+
+a.anchor.anchor-small {
+    top: 0;
+}
+
+/* Faded out hr */
+hr.soften {
+    height: 1px;
+    margin: 50px 0 50px 0;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    border: 0;
+}
+
+hr.soften-light {
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+}
+
+// Random
+.list-group {
+    list-style: none;
+    font-size: 1.4rem;
+
+    .list-group-item {
+        padding: 5px 10px;
+    }
+}
+
+.well-custom {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+.nav-tabs {
+    padding-left: 19px;
+    border-bottom: 0;
+    font-weight: 700;
+}
+
+.project {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+img.project {
+    max-width: 400px;
+    max-height: 200px;
+}
+
+img.inline-image {
+    max-width: 100%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.navbar-link.hamburger {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+
+/* Blog
+-------------------------------------------------- */
+.featured-post,
+.categories-links,
+.entry-date,
+.tano-comment,
+.tags-links {
+    margin-right: 10px;
+}
+
+.ion-share {
+    margin-right: 5px;
+}
+
+.thumbnail .caption {
+    padding: 9px 9px 5px 9px;
+}
+
+.pager-small {
+    margin: 5px 0;
+}
+
+
+.sidebar-offcanvas .logo.vlc-qt {
+    background: url(asset_path('icons/vlc-qt.png')) no-repeat center;
+}
+
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 1.5dppx),
+    only screen and (min-resolution: 144dpi)
+{
+    .sidebar-offcanvas .logo.vlc-qt {
+        background-image: url(asset_path('icons/vlc-qt@2x.png'));
+        background-size: 128px 128px;
+    }
+}
+
+@media (#{$bp-smaller-than-tablet}) {
+    body {
+        padding-top: $navbar-height + 1rem;
+    }
+}
+
+@media (#{$bp-larger-than-tablet}) {
+    #mobile-nav {
+        display: none;
+    }
+
+    .modal-dialog {
+        width: 80%;
+    }
+
+    .thumb-right {
+        float: right;
+        margin-left: 10px;
+    }
+
+    .thumb-left {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .thumb-right,
+    .thumb-left {
+        max-width: 300px;
+        margin-bottom: 0;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+}
