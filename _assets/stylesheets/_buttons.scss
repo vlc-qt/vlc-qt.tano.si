@@ -16,11 +16,11 @@ a {
 
 .button,
 button {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     font-family: $font-family-headings;
-    text-transform: uppercase;
     padding: 0 2rem;
+    text-transform: none;
 
     &:hover {
         text-decoration: none;
@@ -33,11 +33,11 @@ input {
     &[type="submit"],
     &[type="reset"],
     &[type="button"] {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 400;
         font-family: $font-family-headings;
-        text-transform: uppercase;
         padding: 0 2rem;
+        text-transform: none;
 
         &:hover {
             text-decoration: none;
