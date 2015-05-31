@@ -16,7 +16,7 @@
         {% stylesheet main %}
 
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.rss" | prepend: site.baseurl | prepend: site.url }}" />
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.rss" | prepend: site.baseurl | prepend: site.main_url }}" />
 
 {% include favicons.html %}
 
