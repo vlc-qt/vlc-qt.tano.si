@@ -11,7 +11,7 @@ main_url: "http://tano.si"
 
 # Build settings
 markdown: kramdown
-exclude: [build.sh, Gemfile, Gemfile.lock, README.md, src]
+exclude: [build.sh, Gemfile, Gemfile.lock, README.md, src, vendor]
 
 assets:
   version: 1
