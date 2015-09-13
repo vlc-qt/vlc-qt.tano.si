@@ -8,14 +8,16 @@ description: >
 baseurl: ""
 url: "http://vlc-qt.tano.si"
 main_url: "http://tano.si"
+cdn_url: "http://cdn.tano.si/vlc-qt"
 
 # Build settings
+production: false
 markdown: kramdown
-exclude: [build.sh, Gemfile, Gemfile.lock, README.md, src, vendor]
+exclude: [Gemfile, Gemfile.lock, Rakefile, README.md, src, vendor]
 
 assets:
   version: 1
-  cache: true
+  cache: false
   compress:
     css:  sass
     js:   uglifier

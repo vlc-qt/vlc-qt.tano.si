@@ -6,3 +6,23 @@ Feel free to open a pull request if some content need updating.
 ## Guides
 
 This will also be a place for guides. More information soon.
+
+## How to build
+
+This web page is powered by [Jekyll](http://jekyllrb.com).
+  1. Prepare the environment
+  ```
+  gem install bundler
+  bundle install
+  ```
+
+  2. For development purposes, just serve Jekyll locally
+  ```
+  jekyll serve --watch
+  ```
+
+  3. Deployment can be made using `rake`
+  ```
+  bundle install --deployment
+  bundle exec rake deploy
+  ```

@@ -1,0 +1,7 @@
+# Build settings
+production: true
+
+assets:
+  baseurl: "http://cdn.tano.si/vlc-qt/assets/"
+  version: 1
+  cache: true

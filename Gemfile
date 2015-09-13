@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem "jekyll"
+gem "rake"
+
 #
 # jekyll-assets plugin itself
 #
