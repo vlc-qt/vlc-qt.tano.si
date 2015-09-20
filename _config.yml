@@ -21,4 +21,8 @@ assets:
   compress:
     css:  sass
     js:   uglifier
-
+  sources:
+    - _assets/fonts
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
