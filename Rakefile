@@ -1,6 +1,6 @@
 require 'fileutils'
 
-@output = '/var/www/vlc-qt.tano.si/'
+@output = '/var/www/vlc-qt/'
 @cdn = '/var/www/cdn/'
 @cdn_name = 'vlc-qt'
 
