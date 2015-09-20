@@ -8,6 +8,9 @@ title: Quickly create a fully functional cross-platform media player
     <h1>Quickly create a fully functional cross-platform media player</h1>
     <ul class="links">
         <li>Version {{ site.data.dl.stable.version }}</li>
+        {% if site.data.dl.testing %}
+        <li>Pre-release {{ site.data.dl.testing.version }}</li>
+        {% endif %}
         <li><a href="http://github.com/vlc-qt/vlc-qt" target="_blank">GitHub project</a></li>
         <li><a data-toggle="modal" href="#tano-modal-lgpl">License</a></li>
         <li><a data-toggle="modal" href="#tano-modal-donate">Donate</a></li>
@@ -44,8 +47,7 @@ title: Quickly create a fully functional cross-platform media player
     </div>
     <div class="six columns">
         <h2>QML Library</h2>
-        <p>VLC-Qt also contains experimental QML part which is not enabled by default. This currently enables simple video playback using OpenGL.</p>
-        <p>I will not work on this feature much so any help is appreciated.</p>
+        <p>VLC-Qt also contains QML part which provides simple video playback using OpenGL.</p>
     </div>
 </div>
 
@@ -56,20 +58,30 @@ title: Quickly create a fully functional cross-platform media player
 <p class="byline">Download VLC-Qt packages and SDKs for your platform.</p>
 
 <div class="row">
-    <div class="six columns">
+    <div class="four columns">
         <h2>OS X and Windows</h2>
+        <p>Download stable version {{ site.data.dl.stable.version }}:</p>
         {% if site.data.dl.stable.osx %}
-        <p><a href="{{ site.data.dl.stable.osx }}">VLC-Qt for OS X 10.6 and later (64-bit)</a></p>
+        <p><a href="{{ site.data.dl.stable.osx }}">OS X 10.6 and later (64-bit)</a></p>
         {% else %}
-        <p>OS X binaries are not available yet.
-            <br>Sorry for inconveniece.</p>
+        <p>Stable OS X binaries are not available yet. Sorry for inconveniece.</p>
         {% endif %}
-        <p><a href="{{ site.data.dl.stable.win64 }}">VLC-Qt for Windows 64-bit (MSVC 2012)</a>
-            <br><a href="{{ site.data.dl.stable.win32 }}">VLC-Qt for Windows 32-bit (MSVC 2012)</a></p>
-        <p>All SDKs are based on Qt 5.1.1 and VLC 2.0.8.</p>
+        <p><a href="{{ site.data.dl.stable.win64 }}">Windows 64-bit (MSVC 2012)</a>
+            <br><a href="{{ site.data.dl.stable.win32 }}">Windows 32-bit (MSVC 2012)</a>
+            <br><a href="{{ site.data.dl.stable.mingw }}">Windows 32-bit (MinGW)</a></p>
+        <p>All SDKs are based on Qt 5.4 and VLC 2.2.</p>
         <p>Download other OS X and Windows binaries from <a href="http://github.com/vlc-qt/vlc-qt/releases" target="_blank">GitHub Repository</a>.</p>
     </div>
-    <div class="six columns">
+    <div class="four columns">
+        <h2>Pre-release</h2>
+        <p>Download latest pre-release version {{ site.data.dl.testing.version }}:</p>
+        <p><a href="{{ site.data.dl.testing.osx }}">OS X 10.6 and later (64-bit)</a></p>
+        <p><a href="{{ site.data.dl.testing.win64 }}">Windows 64-bit (MSVC 2013)</a>
+            <br><a href="{{ site.data.dl.testing.win32 }}">Windows 32-bit (MSVC 2013)</a>
+            <br><a href="{{ site.data.dl.testing.mingw }}">Windows 32-bit (MinGW)</a></p>
+        <p>All SDKs are based on Qt 5.5 and VLC 2.2.</p>
+    </div>
+    <div class="four columns">
         <h2>Linux packages</h2>
         <p>Official VLC-Qt packages are available for
             <a data-toggle="modal" href="#tano-modal-ubuntu">Ubuntu</a> and
