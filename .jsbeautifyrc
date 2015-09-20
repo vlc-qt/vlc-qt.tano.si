@@ -1,0 +1,22 @@
+{
+  // The plugin looks for a .jsbeautifyrc file in the same directory as the
+  // source file you're prettifying (or any directory above if it doesn't exist,
+  // or in your home folder if everything else fails) and uses those options
+  // along the default ones.
+
+  "html": {
+    "indent_handlebars": true, // e.g. {{#foo}}, {{/foo}}
+    "indent_inner_html": true, // Indent <head> and <body> sections
+    "max_preserve_newlines": 1, // Maximum number of line breaks to be preserved in one chunk (0 disables)
+    "end_with_newline": true // End output with newline
+  },
+  "css": {
+    "end_with_newline": true, // End output with newline
+  },
+  "js": {
+    "allowed_file_extensions": ["js", "json", "jshintrc", "jsbeautifyrc"],
+    "end_with_newline": true, // End output with newline
+    "indent_size": 2, // Indentation size
+    "max_preserve_newlines": 2 // Maximum number of line breaks to be preserved in one chunk (0 disables)
+  }
+}

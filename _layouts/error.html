@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-        <link href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-        {% if page.absolute %}
-        <link rel="stylesheet" href="{{ site.url }}{% asset_path external.css %}">
-        <link rel="stylesheet" href="{{ site.url }}{% asset_path main.css %}">
-        {% else %}
-        {% stylesheet external %}
-        {% stylesheet main %}
-        {% endif %}
-    </head>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-    <body class="error">
-        <div class="container">
-            <h1>{{ page.title }}</h1>
-            <h2>Oops, you've encountered an error</h2>
-            
-            {{ content }}
-            
+    {% if page.absolute %}
+    <link rel="stylesheet" href="{{ site.url }}{% asset_path external.css %}">
+    <link rel="stylesheet" href="{{ site.url }}{% asset_path main.css %}">
+    {% else %}
+    {% stylesheet external %}
+    {% stylesheet main %}
+    {% endif %}
+</head>
+
+<body class="error">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        <h2>Oops, you've encountered an error</h2>
+
+        {{ content }}
+
+        <p>
+            <a href="{{ site.url }}" class="button button-primary button-large button-bg">Home</a>
+        </p>
+
+        <hr class="soften soften-light">
+
+        <footer class="footer">
             <p>
-                <a href="{{ site.url }}" class="button button-primary button-large button-bg">Home</a>
+                &copy; 2004-2015 Tadej Novak
             </p>
+        </footer>
+    </div>
+</body>
 
-            <hr class="soften soften-light">
-
-            <footer class="footer">
-                <p>
-                    &copy; 2004-2015 Tadej Novak
-                </p>
-            </footer>
-        </div>
-    </body>
 </html>

@@ -1,19 +1,19 @@
 {% include sidebar/start.html %}
-	        	<a class="sidebar-image logo vlc-qt" href="{% if page.docs %}{{ site.url }}{% else %}#top{% endif %}"></a>
+<a class="sidebar-image logo vlc-qt" href="{% if page.docs %}{{ site.url }}{% else %}#top{% endif %}"></a>
 
-	        	<h1>VLC-Qt Library</h1>
+<h1>VLC-Qt Library</h1>
 
-	        	<nav class="nav-sidebar">
-			        <ul class="nav nav-stacked">
-	                    <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#about">About</a></li>
-	                    <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#download">Download</a></li>
-	                    <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#support">Help &amp; Support</a></li>
-	                    <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#contribute">Contribute</a></li>
-	                    <li{% if page.docs %} class="active"{% endif %}><a href="{{ "/reference/" | prepend: site.baseurl }}">Library reference</a></li>
-	                </ul>
-	                <ul class="nav nav-stacked nav-extra">
-	                	<li><a href="{{ site.main_url }}/#projects">All projects</a></li>
-	                	<li><a href="{{ site.main_url }}">Tadej Novak</a></li>
-			        </ul>
-			    </nav>
+<nav class="nav-sidebar">
+    <ul class="nav nav-stacked">
+        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#about">About</a></li>
+        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#download">Download</a></li>
+        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#support">Help &amp; Support</a></li>
+        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#contribute">Contribute</a></li>
+        <li{% if page.docs %} class="active" {% endif %}><a href="{{ "/reference/" | prepend: site.baseurl }}">Library reference</a></li>
+    </ul>
+    <ul class="nav nav-stacked nav-extra">
+        <li><a href="{{ site.main_url }}/#projects">All projects</a></li>
+        <li><a href="{{ site.main_url }}">Tadej Novak</a></li>
+    </ul>
+</nav>
 {% include sidebar/end.html %}

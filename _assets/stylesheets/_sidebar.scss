@@ -77,28 +77,28 @@
 }
 
 /* active & hover links */
-.nav-sidebar .nav > .active > a, 
-.nav-sidebar .nav > li > a:hover, 
-.nav-sidebar .nav > li > a:focus {     
+.nav-sidebar .nav > .active > a,
+.nav-sidebar .nav > li > a:hover,
+.nav-sidebar .nav > li > a:focus {
     color: $highlight-color;
-    border-left-color: $highlight-color;       
-    text-decoration: none;          
+    border-left-color: $highlight-color;
+    text-decoration: none;
     background-color: transparent;
 }
 
-.nav-sidebar .nav > .active > a, 
-.nav-sidebar .nav > li > a:hover, 
+.nav-sidebar .nav > .active > a,
+.nav-sidebar .nav > li > a:hover,
 .nav-sidebar .nav > li > a:focus {
 
 }
 /* all active links */
-.nav-sidebar .nav > .active > a, 
+.nav-sidebar .nav > .active > a,
 .nav-sidebar .nav > .active:hover > a,
 .nav-sidebar .nav > .active:focus > a {
     font-weight: 700;
 }
 /* nested active links */
-.nav-sidebar .nav .nav >.active > a, 
+.nav-sidebar .nav .nav >.active > a,
 .nav-sidebar .nav .nav >.active:hover > a,
 .nav-sidebar .nav .nav >.active:focus > a {
     font-weight: 500;
@@ -106,11 +106,11 @@
 
 /* hide inactive nested list */
 .nav-sidebar .nav ul.nav {
-    display: none;           
+    display: none;
 }
 /* show active nested list */
 .nav-sidebar .nav > .active > ul.nav {
-    display: block;           
+    display: block;
 }
 
 .nav-sidebar .nav-extra {

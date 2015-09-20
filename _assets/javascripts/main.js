@@ -1,7 +1,6 @@
 //= require cookies
 
-$(document).ready(function()
-{
+$(document).ready(function() {
     // Variables
     var body = $('body'),
         win = $(window),
@@ -16,9 +15,8 @@ $(document).ready(function()
         }
     };
 
-    function init()
-    {
-        $("a[href^='#']").smoothScroll();    
+    function init() {
+        $("a[href^='#']").smoothScroll();
         cookies.showMessageLoad();
 
         $('[data-toggle=offcanvas]').click(function() {
