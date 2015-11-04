@@ -6,9 +6,9 @@ description: >
   It contains core classes for main media playback and also some GUI classes
   for faster media player development.
 baseurl: ""
-url: "http://vlc-qt.tano.si"
-main_url: "http://tano.si"
-cdn_url: "http://cdn.tano.si/vlc-qt"
+url: "https://vlc-qt.tano.si"
+main_url: "https://tano.si"
+cdn_url: "https://cdn.tano.si/vlc-qt"
 
 # Build settings
 production: false

@@ -35,7 +35,7 @@
 
     width: 150px;
     height: 150px;
-    background: url(http://www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=150) no-repeat center;
+    background: url(//www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=150) no-repeat center;
     background-size: 150px 150px;
 }
 
@@ -156,7 +156,7 @@
     .sidebar-offcanvas .avatar {
         width: 200px;
         height: 200px;
-        background: url(http://www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=200) no-repeat center;
+        background: url(//www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=200) no-repeat center;
         background-size: 200px 200px;
     }
 }
@@ -254,6 +254,6 @@
     only screen and (min-resolution: 144dpi)
 {
     .sidebar-offcanvas .avatar {
-        background-image: url(http://www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=400);
+        background-image: url(//www.gravatar.com/avatar/8238d81dc3d8c189aca02b570b32bb08.jpg?s=400);
     }
 }
