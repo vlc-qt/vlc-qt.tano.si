@@ -1,4 +1,4 @@
-//= require vendor/normalize
-//= require vendor/syntax
-//= require vendor/ionicons
-//= require vendor/bootstrap
+//= require external/syntax
+
+@import "external/ionicons";
+@import "external/bootstrap";

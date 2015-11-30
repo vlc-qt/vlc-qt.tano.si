@@ -13,16 +13,20 @@ cdn_url: "https://cdn.tano.si/vlc-qt"
 # Build settings
 production: false
 markdown: kramdown
-exclude: [Gemfile, Gemfile.lock, Rakefile, README.md, src, vendor]
+highlighter: pygments
+exclude: [bower_components, Gemfile, Gemfile.lock, Rakefile, README.md, src, vendor]
 
 assets:
-  version: 1
   cache: false
   compress:
-    css:  sass
-    js:   uglifier
+    css: true
+    js:  true
+  features:
+    automatic_img_alt:  false
+    automatic_img_size: false
   sources:
     - _assets/fonts
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/images
+    - bower_components

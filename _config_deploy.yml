@@ -2,6 +2,5 @@
 production: true
 
 assets:
-  baseurl: "//cdn.tano.si/vlc-qt/assets/"
-  version: 1
-  cache: true
+  cdn: "//cdn-direct.tano.si/vlc-qt/"
+  cache: .asset-cache

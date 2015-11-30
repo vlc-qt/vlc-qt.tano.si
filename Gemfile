@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem "jekyll"
 gem "rake"
 
+gem "pygments.rb"
+
 #
 # jekyll-assets plugin itself
 #

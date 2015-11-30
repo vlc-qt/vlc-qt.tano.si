@@ -10,6 +10,10 @@ p {
     text-align: justify;
 }
 
+figure {
+    margin: 1em 0;
+}
+
 .text-right {
     text-align: right;
 }
@@ -123,6 +127,15 @@ img.inline-image {
 
 .sidebar-offcanvas .logo.vlc-qt {
     background: url(asset_path('icons/vlc-qt.png')) no-repeat center;
+}
+
+.nav-pills {
+    .nav-link.active {
+        background-color: $hover-color;
+        &:focus, &:hover {
+            background-color: $hover-color;
+        }
+    }
 }
 
 

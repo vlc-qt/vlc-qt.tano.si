@@ -1,0 +1,19 @@
+// Core variables and mixins
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Components
+@import "bootstrap/scss/animation";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/pager";
+@import "bootstrap/scss/labels";
+@import "bootstrap/scss/alert";
+
+// Components w/ JavaScript
+@import "bootstrap/scss/modal";
+
+// Utility classes
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities-spacing";
+@import "bootstrap/scss/utilities-responsive";

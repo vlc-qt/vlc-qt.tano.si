@@ -13,7 +13,7 @@ end
 task :deploy do
   puts 'Building web page using Jekyll'
 
-  puts `bundle exec jekyll build --config _config.yml,_config_deploy.yml --destination #{@output}`
+  puts `JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_deploy.yml --destination #{@output}`
 
   puts ''
   puts 'Copying assets and other resources to CDN'

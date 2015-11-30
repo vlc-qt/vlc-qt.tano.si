@@ -1,0 +1,25 @@
+{
+  "name": "vlc-qt.tano.si",
+  "authors": [
+    "Tadej Novak <tadej@tano.si>"
+  ],
+  "description": "VLC-Qt Web Page",
+  "license": "CC BY-SA 4.0",
+  "homepage": "https://vlc-qt.tano.si",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Skeleton-Sass": "skeleton-scss#*",
+    "Ionicons": "ionicons#~2.0.1",
+    "bootstrap": "~4.0.0-alpha",
+    "js-cookie": "~2.0.4",
+    "jquery": "~2.1.4",
+    "jquery-smooth-scroll": "~1.5.6"
+  }
+}
