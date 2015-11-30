@@ -5,15 +5,15 @@
 
 <nav class="nav-sidebar">
     <ul class="nav nav-stacked">
-        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#about">About</a></li>
-        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#download">Download</a></li>
-        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#support">Help &amp; Support</a></li>
-        <li><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#contribute">Contribute</a></li>
-        <li{% if page.docs %} class="active" {% endif %}><a href="{{ "/reference/" | prepend: site.baseurl }}">Library reference</a></li>
+        <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#download" class="nav-link">Download</a></li>
+        <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#support" class="nav-link">Help &amp; Support</a></li>
+        <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#contribute" class="nav-link {% if page.docs %} active {% endif %}">Contribute</a></li>
+        <li class="nav-item"><a href="{{ "/reference/" | prepend: site.baseurl }}" class="nav-link">Library reference</a></li>
     </ul>
     <ul class="nav nav-stacked nav-extra">
-        <li><a href="{{ site.main_url }}/#projects">All projects</a></li>
-        <li><a href="{{ site.main_url }}">Tadej Novak</a></li>
+        <li class="nav-item"><a href="{{ site.main_url }}/#projects" class="nav-link">All projects</a></li>
+        <li class="nav-item"><a href="{{ site.main_url }}" class="nav-link">Tadej Novak</a></li>
     </ul>
 </nav>
 {% include sidebar/end.html %}
