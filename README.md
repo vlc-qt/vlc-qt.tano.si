@@ -39,4 +39,4 @@ You will need the following things properly installed on your computer.
 [license]: https://github.com/vlc-qt/vlc-qt.tano.si/blob/master/LICENSE.md
 
 [web-img]: https://img.shields.io/badge/web-vlc--qt.tano.si-green.svg
-[license-img]: https://img.shields.io/github/license/vlc-qt/vlc-qt.tano.si.svg
+[license-img]: https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue.svg
