@@ -15,7 +15,7 @@ production: false
 markdown: kramdown
 highlighter: pygments
 permalink: /:year/:month/:day/:title/
-exclude: [bower_components, Gemfile, Gemfile.lock, Rakefile, README.md, src, vendor]
+exclude: [bower_components, Gemfile, Gemfile.lock, LICENSE.md, Rakefile, README.md, src, vendor]
 
 assets:
   cache: false
