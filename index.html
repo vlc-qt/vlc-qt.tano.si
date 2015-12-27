@@ -57,23 +57,20 @@ title: Quickly create a fully functional cross-platform media player
 
 <a id="download" class="anchor"></a>
 <h1>Download</h1>
-<p class="byline">Download VLC-Qt packages and SDKs for your platform.</p>
+<p class="byline">Download VLC-Qt packages for your platform.</p>
 
 <div class="row">
-    <div class="four columns">
+    <div class="{% if site.data.dl.testing %}four{% else %}six{% endif %} columns">
         <h2>OS X and Windows</h2>
         <p>Download stable version {{ site.data.dl.stable.version }}:</p>
-        {% if site.data.dl.stable.osx %}
         <p><a href="{{ site.data.dl.stable.osx }}">OS X 10.6 and later (64-bit)</a></p>
-        {% else %}
-        <p>Stable OS X binaries are not available yet. Sorry for inconveniece.</p>
-        {% endif %}
-        <p><a href="{{ site.data.dl.stable.win64 }}">Windows 64-bit (MSVC 2012)</a>
-            <br><a href="{{ site.data.dl.stable.win32 }}">Windows 32-bit (MSVC 2012)</a>
+        <p><a href="{{ site.data.dl.stable.win64 }}">Windows 64-bit (MSVC 2013)</a>
+            <br><a href="{{ site.data.dl.stable.win32 }}">Windows 32-bit (MSVC 2013)</a>
             <br><a href="{{ site.data.dl.stable.mingw }}">Windows 32-bit (MinGW)</a></p>
-        <p>All SDKs are based on Qt 5.4 and VLC 2.2.</p>
+        <p>All SDKs are based on Qt 5.5.1 and VLC 2.2.1.</p>
         <p>Download other OS X and Windows binaries from <a href="https://github.com/vlc-qt/vlc-qt/releases" target="_blank">GitHub Repository</a>.</p>
     </div>
+    {% if site.data.dl.testing %}
     <div class="four columns">
         <h2>Pre-release</h2>
         <p>Download latest pre-release version {{ site.data.dl.testing.version }}:</p>
@@ -83,18 +80,18 @@ title: Quickly create a fully functional cross-platform media player
             <br><a href="{{ site.data.dl.testing.mingw }}">Windows 32-bit (MinGW)</a></p>
         <p>All SDKs are based on Qt 5.5 and VLC 2.2.</p>
     </div>
-    <div class="four columns">
+    {% endif %}
+    <div class="{% if site.data.dl.testing %}four{% else %}six{% endif %} columns">
         <h2>Linux packages</h2>
         <p>Official VLC-Qt packages are available for
-            <a data-toggle="modal" href="#tano-modal-ubuntu">Ubuntu</a> and
-            <a href="https://aur.archlinux.org/packages.php?ID=41827" target="_blank">Arch Linux</a>.</p>
+            <a data-toggle="modal" href="#tano-modal-ubuntu">Ubuntu</a>.</p>
         <p>There may be other community packages available in other distributions.</p>
-<h2>
-    Source</h2>
-<p>Download the latest source code using:</p>
-{% highlight bash %} git clone git://github.com/vlc-qt/vlc-qt.git {% endhighlight %}
-<p>or visit <a href="https://github.com/vlc-qt/vlc-qt" target="_blank">GitHub Repository</a>.</p>
-</div>
+        <h2>
+            Source</h2>
+        <p>Download the latest source code using:</p>
+        {% highlight bash %} git clone git://github.com/vlc-qt/vlc-qt.git {% endhighlight %}
+        <p>or visit <a href="https://github.com/vlc-qt/vlc-qt" target="_blank">GitHub Repository</a>.</p>
+    </div>
 </div>
 
 <hr class="soften">
