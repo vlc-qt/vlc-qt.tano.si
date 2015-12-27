@@ -8,8 +8,8 @@
         <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#about" class="nav-link">About</a></li>
         <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#download" class="nav-link">Download</a></li>
         <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#support" class="nav-link">Help &amp; Support</a></li>
-        <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#contribute" class="nav-link {% if page.docs %} active {% endif %}">Contribute</a></li>
-        <li class="nav-item"><a href="{{ "/reference/" | prepend: site.baseurl }}" class="nav-link">Library reference</a></li>
+        <li class="nav-item"><a href="{% if page.docs %}{{ site.baseurl }}/{% endif %}#contribute" class="nav-link">Contribute</a></li>
+        <li class="nav-item"><a href="{{ "/reference/" | prepend: site.baseurl }}" class="nav-link {% if page.docs %} active {% endif %}">Library reference</a></li>
     </ul>
     <ul class="nav nav-stacked nav-extra">
         <li class="nav-item"><a href="{{ site.main_url }}/#projects" class="nav-link">All projects</a></li>

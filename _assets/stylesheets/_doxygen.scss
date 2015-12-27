@@ -1,0 +1,353 @@
+$doxygen-border-dark: #abc9b2;
+$doxygen-border: #d0e3cc;
+$doxygen-border-line: #8dbe92;
+$doxygen-bg: #ebf6ef;
+
+body.doxygen {
+  font-family: $font-family;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.doxygen {
+  table,
+  div,
+  p,
+  dl {
+    font-family: $font-family;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h2.groupheader {
+    border-bottom: 1px solid $primary-color;
+    color: $hover-color;
+    font-size: 150%;
+    font-weight: 500;
+  }
+
+  h3.groupheader {
+    font-size: 100%;
+    font-weight: 500;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 4rem;
+    font-family: $font-family-headings;
+    font-weight: 500;
+    clear: both;
+    color: $hover-color;
+  }
+
+  div.ingroups {
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $medium-grey;
+    text-align: center;
+    width: auto;
+  }
+
+  span.legend {
+    font-size: 70%;
+  }
+
+  h3.version {
+    font-size: 90%;
+  }
+
+  td.tiny {
+    font-size: 75%;
+  }
+
+  div.summary {
+    font-size: 9pt;
+  }
+
+  #powerTip {
+    font-size: smaller;
+  }
+
+  div.qindex,
+  div.navtab {
+    background-color: $doxygen-bg;
+    border: 1px solid $doxygen-border-dark;
+    text-align: center;
+  }
+
+  .contents a:visited {
+    color: $link-color;
+  }
+
+  .contents a.qindexHL:visited {
+    color: #ffffff;
+  }
+
+  a.code,
+  a.code:visited,
+  a.line,
+  a.line:visited {
+    color: $link-color;
+  }
+
+  a.codeRef,
+  a.codeRef:visited,
+  a.lineRef,
+  a.lineRef:visited {
+    color: $link-color;
+  }
+
+  div.line {
+    font-size: 13px;
+  }
+
+  pre.fragment {
+    border: 1px solid $doxygen-border;
+    background-color: #fcfcfc;
+    font-size: 9pt;
+    font-size: 105%;
+  }
+
+  div.fragment {
+    background-color: #fcfcfc;
+    border: 1px solid $doxygen-border;
+  }
+
+  body {
+    background-color: white;
+    color: $font-color;
+    margin: 0;
+  }
+
+  td.indexkey {
+    background-color: $doxygen-bg;
+    font-weight: bold;
+    border: 1px solid $doxygen-border;
+  }
+
+  td.indexvalue {
+    background-color: $doxygen-bg;
+    border: 1px solid $doxygen-border;
+  }
+
+  tr.memlist {
+    background-color: $doxygen-bg;
+  }
+
+  blockquote {
+    background-color: #fcfcfc;
+    border-left: 2px solid $doxygen-border-dark;
+  }
+
+  .dirtab {
+    border: 1px solid $doxygen-border-dark;
+  }
+
+  th.dirtab {
+    background: $doxygen-bg;
+  }
+
+  hr {
+    border-top: 1px solid $hover-color;
+  }
+
+  .params .paramname {
+    padding-right: 5px;
+  }
+
+  .mlabels-right {
+    vertical-align: middle;
+  }
+
+  .mdescLeft,
+  .mdescRight,
+  .memItemLeft,
+  .memItemRight,
+  .memTemplItemLeft,
+  .memTemplItemRight,
+  .memTemplParams {
+    background-color: #fcfcfc;
+  }
+
+  .memSeparator {
+    border-bottom: 1px solid $doxygen-border;
+  }
+
+  .memTemplParams,
+  .memtemplate {
+    color: $hover-color;
+    font-size: 80%;
+  }
+
+  .memnav {
+    background-color: $doxygen-bg;
+    border: 1px solid $doxygen-border-dark;
+  }
+
+  .memproto,
+  dl.reflist dt {
+    border-top: 1px solid $doxygen-border-dark;
+    border-left: 1px solid $doxygen-border-dark;
+    border-right: 1px solid $doxygen-border-dark;
+    color: $hover-color;
+    background-image: initial;
+    background-color: $doxygen-bg;
+  }
+
+  .memdoc,
+  dl.reflist dd {
+    border-bottom: 1px solid $doxygen-border-dark;
+    border-left: 1px solid $doxygen-border-dark;
+    border-right: 1px solid $doxygen-border-dark;
+    background-color: #f7f7f7;
+    background-image: url(nav_g.png);
+    background-color: #FFFFFF;
+  }
+
+  span.mlabel {
+    background-color: $hover-color;
+    border-top: 1px solid $hover-color;
+    border-left: 1px solid $hover-color;
+    border-right: 1px solid $hover-color;
+    border-bottom: 1px solid $hover-color;
+    color: white;
+    font-size: 8pt;
+  }
+
+  div.directory {
+    border-top: 1px solid $doxygen-border-line;
+    border-bottom: 1px solid $doxygen-border-line;
+  }
+
+  .directory tr.even {
+    background-color: #f7f7f7;
+  }
+
+  table.directory {
+    font: 400 14px $font-family;
+  }
+
+  .directory .levels {
+    font-size: 8pt;
+  }
+
+  /* @end */
+  .tabsearch {
+    top: 0;
+    left: 10px;
+    height: 36px;
+    background-image: url(tab_b.png);
+    z-index: 101;
+    overflow: hidden;
+    font-size: 13px;
+  }
+
+  div.header {
+    background-image: initial;
+    background-color: white;
+    border-bottom: 0;
+  }
+
+  .arrow {
+    color: $doxygen-border-line;
+    font-size: 80%;
+  }
+
+  .icon {
+    font-size: 12px;
+    background-color: $hover-color;
+  }
+
+  table.fieldtable {
+    border: 1px solid $doxygen-border-dark;
+  }
+
+  .fieldtable td.fieldtype,
+  .fieldtable td.fieldname {
+    border-right: 1px solid $doxygen-border-dark;
+    border-bottom: 1px solid $doxygen-border-dark;
+  }
+
+  .fieldtable td.fielddoc {
+    border-bottom: 1px solid $doxygen-border-dark;
+  }
+
+  .fieldtable th {
+    background-image: initial;
+    background-color: $doxygen-bg;
+    font-size: 90%;
+    color: $hover-color;
+    border-bottom: 1px solid $doxygen-border-dark;
+  }
+
+  #titlearea {
+    border-bottom: 1px solid $doxygen-border-line;
+  }
+
+  div.zoom {
+    border: 1px solid $doxygen-border-line;
+  }
+
+  dl.citelist dt {
+    color: $hover-color;
+  }
+
+  .navbar-list-right {
+    padding-top: 10px;
+  }
+
+  .sidebar-offcanvas .logo.vlc-qt {
+      background-image: url('vlc-qt.png');
+  }
+
+  /* Search */
+  #MSearchBox {
+    right: initial;
+  }
+
+  #MSearchField {
+    border-radius: 0;
+  }
+
+  #MSearchSelectWindow {
+    border: 1px solid $doxygen-border-line;
+    background-color: $doxygen-bg;
+  }
+
+  .SelectItem {
+    font: 8pt $font-family;
+  }
+
+  a.SelectItem:hover {
+    background-color: $hover-color;
+  }
+
+  #MSearchResultsWindow {
+    background-color: $doxygen-bg;
+  }
+
+  .SRSymbol,
+  a.SRScope {
+    color: $link-color;
+    font-family: $font-family;
+  }
+
+  a.SRSymbol:hover,
+  a.SRScope:hover {
+    color: $hover-color;
+  }
+
+  .searchresult {
+    background-color: $doxygen-bg;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 1.5dppx),
+    only screen and (min-resolution: 144dpi)
+{
+    .doxygen .sidebar-offcanvas .logo.vlc-qt {
+        background-image: url('vlc-qt@2x.png');
+    }
+}
