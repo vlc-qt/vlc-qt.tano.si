@@ -61,24 +61,24 @@ title: Quickly create a fully functional cross-platform media player
 
 <div class="row">
     <div class="{% if site.data.dl.testing %}four{% else %}six{% endif %} columns">
-        <h2>OS X and Windows</h2>
+        <h2>macOS and Windows</h2>
         <p>Download stable version {{ site.data.dl.stable.version }}:</p>
-        <p><a href="{{ site.data.dl.stable.osx }}">OS X 10.6 and later (64-bit)</a></p>
+        <p><a href="{{ site.data.dl.stable.macos }}">macOS 10.6 and later (64-bit)</a></p>
         <p><a href="{{ site.data.dl.stable.win64 }}">Windows 64-bit (MSVC 2013)</a>
             <br><a href="{{ site.data.dl.stable.win32 }}">Windows 32-bit (MSVC 2013)</a>
             <br><a href="{{ site.data.dl.stable.mingw }}">Windows 32-bit (MinGW)</a></p>
-        <p>All SDKs are based on Qt 5.5.1 and VLC 2.2.2.</p>
-        <p>Download other OS X and Windows binaries from <a href="https://github.com/vlc-qt/vlc-qt/releases" target="_blank">GitHub Repository</a>.</p>
+        <p>All SDKs are based on Qt 5.6.1 and VLC 2.2.4.</p>
+        <p>Download other macOS and Windows binaries from <a href="https://github.com/vlc-qt/vlc-qt/releases" target="_blank">GitHub Repository</a>.</p>
     </div>
     {% if site.data.dl.testing %}
     <div class="four columns">
         <h2>Pre-release</h2>
         <p>Download latest pre-release version {{ site.data.dl.testing.version }}:</p>
-        <p><a href="{{ site.data.dl.testing.osx }}">OS X 10.6 and later (64-bit)</a></p>
+        <p><a href="{{ site.data.dl.testing.macos }}">macOS 10.6 and later (64-bit)</a></p>
         <p><a href="{{ site.data.dl.testing.win64 }}">Windows 64-bit (MSVC 2013)</a>
             <br><a href="{{ site.data.dl.testing.win32 }}">Windows 32-bit (MSVC 2013)</a>
             <br><a href="{{ site.data.dl.testing.mingw }}">Windows 32-bit (MinGW)</a></p>
-        <p>All SDKs are based on Qt 5.5 and VLC 2.2.</p>
+        <p>All SDKs are based on Qt 5.6 and VLC 2.2.</p>
     </div>
     {% endif %}
     <div class="{% if site.data.dl.testing %}four{% else %}six{% endif %} columns">
@@ -126,7 +126,7 @@ title: Quickly create a fully functional cross-platform media player
         <h2>Supported OS</h2>
         <p>VLC-Qt supports
             <strong>Linux</strong>,
-            <strong>OS X</strong> and
+            <strong>macOS</strong> and
             <strong>Windows</strong>, other operating systems are not supported. Official packages are available for Ubuntu and Arch Linux.</p>
     </div>
 </div>
