@@ -1,5 +1,5 @@
-version: 1.0.1
-macos: https://github.com/vlc-qt/vlc-qt/releases/download/1.0.1/VLC-Qt_1.0.1_osx.7z
-win64: https://github.com/vlc-qt/vlc-qt/releases/download/1.0.1/VLC-Qt_1.0.1_win64_msvc2013.7z
-win32: https://github.com/vlc-qt/vlc-qt/releases/download/1.0.1/VLC-Qt_1.0.1_win32_msvc2013.7z
-mingw: https://github.com/vlc-qt/vlc-qt/releases/download/1.0.1/VLC-Qt_1.0.1_win32_mingw.7z
+version: 1.1.0
+macos: https://github.com/vlc-qt/vlc-qt/releases/download/1.1.0/VLC-Qt_1.1.0_macos.7z
+win64: https://github.com/vlc-qt/vlc-qt/releases/download/1.1.0/VLC-Qt_1.1.0_win64_msvc2015.7z
+win32: https://github.com/vlc-qt/vlc-qt/releases/download/1.1.0/VLC-Qt_1.1.0_win32_msvc2015.7z
+mingw: https://github.com/vlc-qt/vlc-qt/releases/download/1.1.0/VLC-Qt_1.1.0_win32_mingw.7z
