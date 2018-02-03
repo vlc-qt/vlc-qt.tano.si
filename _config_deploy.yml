@@ -1,6 +1,2 @@
 # Build settings
 production: true
-
-assets:
-  cdn: "//cdn-direct.tano.si/vlc-qt/"
-  cache: .asset-cache

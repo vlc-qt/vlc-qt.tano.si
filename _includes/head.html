@@ -6,14 +6,14 @@
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    {% javascript external %}
-    {% javascript main %}
+    {% asset external.js %}
+    {% asset main.js %}
 
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-    {% stylesheet external %}
-    {% stylesheet main %}
+    {% asset external.css %}
+    {% asset main.css %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.rss " | prepend: site.baseurl | prepend: site.main_url }}" />

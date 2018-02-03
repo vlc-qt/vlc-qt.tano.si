@@ -8,17 +8,19 @@ description: >
 baseurl: ""
 url: "https://vlc-qt.tano.si"
 main_url: "https://tano.si"
-cdn_url: "https://cdn.tano.si/vlc-qt"
 
 # Build settings
 production: false
 markdown: kramdown
 highlighter: pygments
 permalink: /:year/:month/:day/:title/
-exclude: [bower_components, Gemfile, Gemfile.lock, LICENSE.md, Rakefile, README.md, src, vendor]
+exclude: [bower_components, etc, Gemfile, Gemfile.lock, LICENSE.md, Rakefile, README.md, src, vendor]
+
+plugins:
+  - jekyll-assets
 
 assets:
-  cache: false
+  cache: .asset-cache
   compress:
     css: true
     js:  true

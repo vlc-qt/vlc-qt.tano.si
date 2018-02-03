@@ -126,7 +126,7 @@ img.inline-image {
 
 
 .sidebar-offcanvas .logo.vlc-qt {
-    background: url(asset_path('icons/vlc-qt.png')) no-repeat center;
+    background: asset_url('icons/vlc-qt.png') no-repeat center;
 }
 
 .nav-pills {
@@ -145,7 +145,7 @@ img.inline-image {
     only screen and (min-resolution: 144dpi)
 {
     .sidebar-offcanvas .logo.vlc-qt {
-        background-image: url(asset_path('icons/vlc-qt@2x.png'));
+        background-image: asset_url('icons/vlc-qt@2x.png');
         background-size: 128px 128px;
     }
 }
